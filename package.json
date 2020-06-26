@@ -1,13 +1,28 @@
 {
   "name": "gql-dedup",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "A graphql-tag improvement library which de-duplicates fragments.",
+  "homepage": "https://github.com/DmitryKoterov/gql-dedup#readme",
+  "author": "Dmitry Koterov",
   "license": "MIT",
-  "main": "./dist/index.js",
-  "typings": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DmitryKoterov/gql-dedup.git"
+    "url": "git+https://github.com/DmitryKoterov/gql-dedup.git"
   },
+  "bugs": {
+    "url": "https://github.com/DmitryKoterov/gql-dedup/issues"
+  },
+  "keywords": [
+    "graphql",
+    "tag",
+    "dedup",
+    "deduplicate",
+    "fragments",
+    "apollo",
+    "gql"
+  ],
+  "main": "./dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
@@ -25,5 +40,6 @@
   "peerDependencies": {
     "graphql-tag": "^2.0.0",
     "graphql": "^14.0.0"
-  }
+  },
+  "dependencies": {}
 }

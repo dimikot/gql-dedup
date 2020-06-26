@@ -21,7 +21,9 @@ export default function gql(
 
     const cacheParts = cache.get(body);
     if (!cacheParts) {
-      throw Error(`Cannot find prior gql definition for ${body}`);
+      throw Error(
+        `Are you sure you don't mix gql-dedup usage with the plain graphql-tag? (If you use tsc compiler, also make sure to check if the compiler output file is not stale; tsc has some bugs, especially during incremental builds.) We can't find the following document node in gql-dedup registry: [${body}]`
+      );
     }
 
     parts.push(...cacheParts);
