@@ -1,6 +1,6 @@
 {
   "name": "gql-dedup",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A graphql-tag improvement library which de-duplicates fragments.",
   "homepage": "https://github.com/dimikot/gql-dedup#readme",
   "author": "Dimi Kot",
@@ -27,13 +27,14 @@
     "build": "tsc",
     "dev": "tsc --watch",
     "test": "jest",
-    "clean": "rm -rf dist node_modules yarn.lock package-lock.json"
+    "clean": "rm -rf dist node_modules yarn.lock package-lock.json",
+    "deploy": "npm run build && npm test && npm publish"
   },
   "devDependencies": {
     "@types/jest": "^26.0.3",
     "jest": "^26.1.0",
     "ts-jest": "^26.1.1",
-    "typescript": "^3.9.2",
+    "typescript": "^4.8",
     "graphql-tag": "^2.10.3",
     "graphql": "^14.5.4"
   },
